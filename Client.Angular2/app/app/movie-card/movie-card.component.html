@@ -1,6 +1,4 @@
-<div class="jumbotron">
-    <div class="Container">
-        <h5>{{movie.name}}</h5>
-        {{movie.description}}
-    </div>
+<div class="movie-card">
+    <h5>{{movie.name}}</h5>
+    {{movie.description | reduceString:70}}
 </div>
