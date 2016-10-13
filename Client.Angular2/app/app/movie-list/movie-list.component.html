@@ -1,0 +1,7 @@
+<h1>Movie List</h1>
+
+<ul class="list-unstyled">
+    <li *ngFor="let item of movies">
+        <movie-card [movie]="item"></movie-card>
+    </li>
+</ul>
