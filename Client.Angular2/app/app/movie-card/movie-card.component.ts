@@ -1,8 +1,9 @@
-import { 
-    Component, 
-    OnInit,
+import {
+    Component,
     Input
 } from '@angular/core';
+
+import { Movie } from '../model';
 
 @Component({
     selector: 'movie-card',
@@ -12,5 +13,5 @@ import {
 export class MovieCardComponent {
 
     @Input()
-    public movie: any;
+    public movie: Movie;
 }

@@ -21,19 +21,27 @@ export class MovieListComponent implements OnInit {
     ngOnInit() {
         this.movies = <Movie[]>[
             {
-                name: "Star Wars",
-                description: `Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from 
-                              the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.`
+                name: 'Star Wars',
+                description: `Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee 
+                              and two droids to save the galaxy from the Empire's world-destroying 
+                              battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.`,
+                releaseDate: '1977'
             }, {
-                name: "Sabrina",
-                description: `An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but 
-                              not before his business-focused brother has something to say about it.`
+                name: 'Sabrina',
+                description: `An ugly duckling having undergone a remarkable change, still harbors feelings for her 
+                              crush: a carefree playboy, but not before his business-focused brother has something 
+                              to say about it.`,
+                releaseDate: '1995'
             }, {
-                name: "Patriot Games",
-                description: `When CIA Analyst Jack Ryan interferes with an IRA assassination, a renegade faction targets him and his family for revenge.`
+                name: 'Patriot Games',
+                description: `When CIA Analyst Jack Ryan interferes with an IRA assassination, a renegade faction 
+                              targets him and his family for revenge.`,
+                releaseDate: '1992'
             }, {
-                name: "Raiders of the lost Ark",
-                description: `Archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis.`
+                name: 'Raiders of the lost Ark',
+                description: `Archaeologist and adventurer Indiana Jones is hired by the U.S. government to find 
+                              the Ark of the Covenant before the Nazis.`,
+                releaseDate: '1981'
             },
         ];
     }

@@ -1,4 +1,4 @@
 <div class="movie-card">
-    <h5>{{movie.name}}</h5>
-    {{movie.description | reduceString:70}}
+    <h5>{{movie.name}} ({{movie.releaseDate}})</h5>
+    {{movie.description | reduceString:50}}
 </div>
