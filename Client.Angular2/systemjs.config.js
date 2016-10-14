@@ -29,7 +29,8 @@
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
       
       // The added barrel map
-      'movie-card':                       'app/app/movie-card'
+      'movie-card':                'app/app/movie-card',
+      'model':                     'app/app/model'
 
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -39,7 +40,8 @@
       'angular-in-memory-web-api': { main: './index.js', defaultExtension: 'js' },
 
       // The package definition (notice I had to declare index.js)
-      'movie-card':                       { main: 'index.js',  defaultExtension: 'js' }
+      'movie-card':                       { main: 'index.js',  defaultExtension: 'js' },
+      'model':                            { main: 'index.js',  defaultExtension: 'js' }
     }
   });
 })(this);

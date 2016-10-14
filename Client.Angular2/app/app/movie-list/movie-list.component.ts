@@ -3,6 +3,8 @@ import {
     OnInit
 } from '@angular/core';
 
+import { Movie } from '../model';
+
 @Component({
     selector: 'movie-list',
     templateUrl: './app/app/movie-list/movie-list.component.html',
@@ -10,14 +12,14 @@ import {
 })
 export class MovieListComponent implements OnInit {
 
-    public movies: any[];
+    public movies: Movie[];
 
     constructor() {
 
     }
 
     ngOnInit() {
-        this.movies = [
+        this.movies = <Movie[]>[
             {
                 name: "Star Wars",
                 description: `Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from 
