@@ -1,0 +1,30 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "A MovieInfo service.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toto",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-sync": "^0.1.4",
+    "gulp-tslint": "^6.1.2",
+    "gulp-typescript": "^3.0.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "mongoose": "^4.6.3"
+  }
+}
