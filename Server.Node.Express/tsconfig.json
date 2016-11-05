@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "module":"umd",
-        "sourceMap": true,
-        "noEmitOnError": true
+        "module":"commonjs",
+        "sourceMap": false,
+        "noEmitOnError": true,
+        "target": "es6"
     },
     "exclude": [
-        "node_modules/",
-        "typings/"
+        "node_modules/"
     ]
 }

@@ -14,17 +14,4 @@ export interface Movie extends mongoose.Document {
     posterUrl: string;
 }
 
-export var MovieRepository = mongoose.model<Movie>('movies', movieSchema);
-
-// interface MovieModel extends IMovie, mongoose.Document { }
-
-// var movieSchema = new mongoose.Schema({
-//     name: String,
-//     description: String,
-//     releaseDate: String,
-//     posterUrl: String,
-// });
-
-// var Movie = mongoose.model<MovieModel>('Movie', movieSchema);
-
-// export = Movie;
+export var movieRepository = mongoose.model<Movie>('movies', movieSchema);

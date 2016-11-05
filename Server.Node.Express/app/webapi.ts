@@ -1,5 +1,3 @@
-///<reference path="../typings/index.d.ts"/>
-
 import { Application } from 'express';
 import { TestRouter } from './routes/testRouter';
 import { MovieRouter } from './routes/movieRouter';
