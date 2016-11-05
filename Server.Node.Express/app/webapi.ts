@@ -1,7 +1,6 @@
 import { Application } from 'express';
-import { TestRouter } from './routes/testRouter';
-import { MovieRouter } from './routes/movieRouter';
-import { RequestLogger } from './middleware/requestLogger';
+import { TestRouter, MovieRouter} from './routes';
+import { RequestLogger } from './middleware';
 
 export class WebApi {
     /**

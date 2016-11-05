@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { Movie, movieRepository } from '../model/movieModel';
+import { Movie, movieRepository } from '../model';
 
 export class MovieRouter {
 
