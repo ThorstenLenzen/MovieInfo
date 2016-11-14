@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { Movie, movieRepository } from '../model';
+import { Movie } from '../dataaccess';
 
 export class MovieRouter {
 
@@ -13,8 +13,9 @@ export class MovieRouter {
         this.router.post('/', this.createMovie);
     }
 
+    //movie/
     public getMovies(request: Request, response: Response): void {
-        movieRepository.find({ }, (error, movies) => {
+        Movie.find({ }, (error, movies) => {
             if (error) {
                 response.status(400);
             } else {
@@ -23,8 +24,9 @@ export class MovieRouter {
         });
     }
 
+    //movie/5804c380c28a3bc7eaeab26a
     public getMovieById(request: Request, response: Response): void {
-        movieRepository.findById(request.params['id'], (error, movies) => {
+        Movie.findById(request.params['id'], (error, movies) => {
             if (error) {
                 response.status(400);
             } else {

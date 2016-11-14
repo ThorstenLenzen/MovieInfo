@@ -2,7 +2,7 @@
   "name": "movies",
   "version": "1.0.0",
   "description": "A MovieInfo service.",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,8 +24,7 @@
     "path": "^0.12.7",
     "tslint": "^3.15.1",
     "types": "^0.1.1",
-    "typescript": "^2.0.3",
-    "typings": "^1.4.0"
+    "typescript": "^2.0.3"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
