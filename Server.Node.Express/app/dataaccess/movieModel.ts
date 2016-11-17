@@ -3,14 +3,10 @@ import {
     Document,
     model
 } from 'mongoose';
+
 import  { IMovie } from '../model';
 
-interface IMovieModel extends IMovie, Document {
-    name: string;
-    description: string;
-    releaseDate: string;
-    posterUrl: string;
-}
+export interface IMovieModel extends IMovie, Document {}
 
 var movieSchema = new Schema({
     name: String,

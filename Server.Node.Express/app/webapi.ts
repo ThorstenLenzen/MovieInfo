@@ -1,6 +1,6 @@
 import { Application } from 'express';
 import * as bodyParser from 'body-parser';
-import { TestRouter, MovieRouter} from './routes';
+import { movieRouter} from './routes';
 import { RequestLogger } from './middleware';
 
 export class WebApi {
@@ -22,8 +22,7 @@ export class WebApi {
     }
 
     private configureRoutes(app: Application) {
-        app.use('/test', new TestRouter().router);
-        app.use('/movie', new MovieRouter().router);
+        app.use('/movie', movieRouter);
         // mount more routers heretask
     }
 
