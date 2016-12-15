@@ -9,7 +9,7 @@ import { MovieListComponent }  from './movie-list/movie-list.component';
 @NgModule({
   imports: [ BrowserModule ],
 
-  declarations: [ 
+  declarations: [
     AppComponent,
     MovieListComponent,
     MovieCardComponent,

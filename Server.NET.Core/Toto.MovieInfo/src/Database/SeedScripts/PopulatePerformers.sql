@@ -1,0 +1,8 @@
+﻿INSERT INTO [dbo].[Performers] ([Id], [FirstName], [LastName], [Bio]) 
+	VALUES (N'b34e2939-7338-4788-b70e-352f71ac6ffc', N'Harrison', N'Ford', NULL)
+INSERT INTO [dbo].[Performers] ([Id], [FirstName], [LastName], [Bio]) 
+	VALUES (N'247f17b3-00d9-46e1-90bd-792acfe42baf', N'Julia', N'Ormond', NULL)
+INSERT INTO [dbo].[Performers] ([Id], [FirstName], [LastName], [Bio]) 
+	VALUES (N'2a845db8-85b1-499a-9460-eb2ed8ebc7a6', N'Mark', N'Hamil', NULL)
+INSERT INTO [dbo].[Performers] ([Id], [FirstName], [LastName], [Bio]) 
+	VALUES (N'3bd19b3a-c87c-4825-9aec-9aef545b9e6b', N'Audrey', N'Hepburn', NULL)
