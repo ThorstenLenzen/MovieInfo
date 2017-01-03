@@ -10,5 +10,6 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 :r .\SeedScripts\PopulateGenres.sql	
-:r .\SeedScripts\PopulatePerformers.sql	
+:r .\SeedScripts\PopulateActors.sql	
 :r .\SeedScripts\PopulateMovies.sql	
+:r .\SeedScripts\PopulateMovieActors.sql	

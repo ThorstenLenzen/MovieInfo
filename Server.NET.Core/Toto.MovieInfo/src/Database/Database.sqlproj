@@ -65,17 +65,21 @@
   <ItemGroup>
     <Build Include="Tables\Genres.sql" />
     <Build Include="Tables\Movies.sql" />
-    <Build Include="Tables\Movies_Performers.sql" />
-    <Build Include="Tables\Performers.sql" />
+    <Build Include="Tables\MovieActors.sql" />
+    <Build Include="Tables\Actors.sql" />
     <None Include="SeedScripts\PopulateGenres.sql" />
     <None Include="SeedScripts\PopulateMovies.sql" />
-    <None Include="SeedScripts\PopulatePerformers.sql" />
-    <Build Include="UtilityScripts\DropAllContentInDb.sql" />
+    <None Include="SeedScripts\PopulateActors.sql" />
+    <None Include="UtilityScripts\DropAllContentInDb.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LocalDb.publish.xml" />
+    <None Include="SeedScripts\PopulateMovieActors.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Database.refactorlog" />
   </ItemGroup>
 </Project>

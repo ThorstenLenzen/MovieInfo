@@ -10,7 +10,16 @@
     "Microsoft.Extensions.Logging.Console": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
     "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.1",
-    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1"
+    "Microsoft.AspNetCore.Mvc.ViewFeatures": "1.0.1",
+    "Microsoft.EntityFrameworkCore": "1.1.0",
+    "DataAccess": "1.0.0-*",
+    "ModelFactory": "1.0.0-*",
+    "PersistenceModel": "1.0.0-*",
+    "ServiceModel": "1.0.0-*",
+    "Utilities": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0"
   },
 
   "tools": {

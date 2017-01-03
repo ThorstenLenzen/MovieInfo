@@ -1,1 +1,8 @@
-﻿
+﻿INSERT INTO [dbo].[Movies] ([Id], [GenreId], [Name], [Description], [ReleaseDate]) 
+	VALUES (N'34cc20dd-f728-46fc-8ab9-c742d109ba08', N'e0cfc207-839b-4dd4-a546-8088ac144156', N'Star Wars ', N'Luke Skywalker, a young farmer from the desert planet of Tattooine, must save Princess Leia from the evil Darth Vader. ', N'1977')
+INSERT INTO [dbo].[Movies] ([Id], [GenreId], [Name], [Description], [ReleaseDate]) 
+	VALUES (N'c044f615-32a6-4db7-ba64-ced087acb3bf', N'a60a90c3-d761-408b-a4c0-8b42c66e7ccd', N'Sabrina', N'An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother has something to say about it. ', N'1995')
+INSERT INTO [dbo].[Movies] ([Id], [GenreId], [Name], [Description], [ReleaseDate]) 
+	VALUES (N'6f18831e-3115-41d7-b36c-5b20db386908', N'baba8ca1-f0a5-4bb0-bb96-f0d354807521', N'Patriot Games ', N'When CIA Analyst Jack Ryan interferes with an IRA assassination, a renegade faction targets him and his family for revenge. ', N'1992')
+INSERT INTO [dbo].[Movies] ([Id], [GenreId], [Name], [Description], [ReleaseDate]) 
+	VALUES (N'9f679245-9d52-4bbf-97fc-35e9a27cf511', N'e0cfc207-839b-4dd4-a546-8088ac144156', N'Blade Runner ', N'A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator. ', N'1982')

@@ -4,6 +4,6 @@
 	[GenreId] UNIQUEIDENTIFIER NULL,
     [Name] VARCHAR(100) NOT NULL,
 	[Description] VARCHAR(500) NULL,
-	[ReleaseDate] DATETIME2 NULL, 
+	[ReleaseDate] VARCHAR(4) NULL, 
     CONSTRAINT [FK_Movies_Genres] FOREIGN KEY (GenreId) REFERENCES [Genres]([Id]),
 )
