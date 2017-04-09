@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "toto",
       "styles": [
-        "node_modules/bootstrap/dist/css/bootstrap.css",
+        "assets/bootstrap/css/bootstrap.css",
+        "assets/font-awesome/css/font-awesome.css",
         "styles.css"
       ],
       "scripts": [],
@@ -52,7 +53,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "less",
     "component": {}
   }
 }

@@ -1,11 +1,12 @@
-<div class="movie-card">
-  <p>
+<div class="movie-card text-center well">
     <h5>
-      {{movie.name}}
-      <small>({{movie.releaseDate}})</small>
+      {{ movie.name }}<br>
+      <small>({{ movie.releaseDate }})</small>
     </h5>
-  </p>
-  <p>
-    <img class="img-thumbnail" src="{{movie.posterUrl}}" alt="Sorry! Here should be a poster">
-  </p>
+    <toto-movie-rating [(ngModel)]="movie.rating" [readonly]="true"></toto-movie-rating>
+    <!--<i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+    <i class="fa fa-star" aria-hidden="true" style="color:gold;"> </i>
+    <i class="fa fa-star" aria-hidden="true" style="color:gold;"></i>
+    <i class="fa fa-star-o" aria-hidden="true" style="color:gold;"></i>
+    <i class="fa fa-star-o" aria-hidden="true" style="color:gold;"></i>-->
 </div>
