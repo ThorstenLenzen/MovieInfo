@@ -44,6 +44,12 @@ export class MovieService {
     this.http.get('assets/poster.json').subscribe(data => {
       const overviews = [
         <MovieOverview>{
+          name: 'Raiders of the Lost Ark',
+          releaseDate: '1981',
+          rating: 4,
+          thumbnail: data.json().raiders
+        },
+        <MovieOverview>{
           name: 'Star Wars',
           releaseDate: '1977',
           rating: 4,
