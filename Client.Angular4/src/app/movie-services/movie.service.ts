@@ -1,10 +1,13 @@
-import { MovieOverview, Movie } from './../movie-model';
+import { MovieOverview, Movie } from '../movie-model';
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class MovieService {
 
-  constructor() { }
+  constructor(private http: Http) { }
 
   public getAllMovies(): Array<Movie> {
     return [
@@ -35,25 +38,42 @@ export class MovieService {
     ];
   }
 
-  public getAllMovieOverviews(): Array<MovieOverview> {
-    return [
-      <MovieOverview>{
-        name: 'Star Wars',
-        releaseDate: '1977',
-        rating: 4 },
-      <MovieOverview>{
-        name: 'Sabrina',
-        releaseDate: '1995',
-        rating: 3 },
-      <MovieOverview>{
-        name: 'Patriot Games',
-        releaseDate: '1992',
-        rating: 5 },
-      <MovieOverview>{
-        name: 'Blade Runner',
-        releaseDate: '1982',
-        rating: 0 }
-    ];
+  public getAllMovieOverviews(): Observable<MovieOverview[]> {
+    const subject = new Subject<MovieOverview[]>();
+
+    this.http.get('assets/poster.json').subscribe(data => {
+      const overviews = [
+        <MovieOverview>{
+          name: 'Star Wars',
+          releaseDate: '1977',
+          rating: 4,
+          thumbnail: data.json().raiders
+        },
+        <MovieOverview>{
+          name: 'Sabrina',
+          releaseDate: '1995',
+          rating: 3,
+          thumbnail: data.json().raiders
+         },
+        <MovieOverview>{
+          name: 'Patriot Games',
+          releaseDate: '1992',
+          rating: 5,
+          thumbnail: data.json().raiders
+         },
+        <MovieOverview>{
+          name: 'Blade Runner',
+          releaseDate: '1982',
+          rating: 0,
+          thumbnail: data.json().raiders
+         }
+      ];
+
+      subject.next(overviews);
+      subject.complete();
+    });
+
+    return subject;
   }
 
 }

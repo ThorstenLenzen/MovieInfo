@@ -1,6 +1,5 @@
+import { MovieOverview } from './../movie-model/movie-overview';
 import { Component, Input } from '@angular/core';
-
-import { Movie } from '../movie-model';
 
 @Component({
   selector: 'toto-movie-card',
@@ -8,5 +7,5 @@ import { Movie } from '../movie-model';
   styleUrls: ['./movie-card.component.less']
 })
 export class MovieCardComponent {
-  @Input() movie: Movie;
+  @Input() movie: MovieOverview;
 }

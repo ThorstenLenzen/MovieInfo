@@ -3,4 +3,5 @@ export class Movie {
     public description: string;
     public releaseDate: string;
     public rating: number;
+    public poster: string;
 }
