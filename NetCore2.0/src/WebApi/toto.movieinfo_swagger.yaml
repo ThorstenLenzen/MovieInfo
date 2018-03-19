@@ -1,0 +1,244 @@
+swagger: '2.0'
+info:
+  description: >-
+    A simple implementation of a movie infomation and administration system to
+    try out new technologies.
+  version: 1.0.0
+  title: Toto MovieInfo
+  contact:
+    email: thorsten.lenzen@outlook.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+paths:
+  '/actors':
+    get:
+      tags:
+        - actors
+      summary: Retrieves all actors
+      description: retrieves all actors. Filtering and sorting cann be applied.
+      operationId: getAllActors
+      produces:
+        - application/json
+        - application/xml
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ActorForMultiDisplay'
+        '500':
+          description: An error occured during execution
+    post:
+      tags:
+        - actors
+      summary: Creates a new actor.
+      description: >-
+        This method creates a new actor in the movie info data store. The newly
+        created ctor id will consist normaly of a formalized combination of 
+        first and last name.
+      operationId: createActor
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - name: actor
+          in: body
+          description: >-
+            The actor id consists normaly of a formalized combination of first and
+            last name.
+          required: true
+          schema: 
+           $ref: '#/definitions/ActorForCreate'
+      responses:
+        '204':
+          description: The actor was succesfully inserted into the movie info data store.
+        '404':
+          description: An actor with the specified actor id could not be found.
+        '500':
+          description: An error occured. The cause is not specified.
+  '/actors/{actorId}':
+    get:
+      tags:
+        - actors
+      summary: Retrieves an actor, identified by his actor id.
+      description: >-
+        This method retrieves an actor, identified by his actor id. The actor id consists normaly of a formalized combination of first and last name.
+      operationId: getActorById
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - name: actorId
+          in: path
+          description: >-
+            The actor id consists normaly of a formalized combination of first and
+            last name.
+          required: true
+          type: string
+      responses:
+        '200':
+          description: >-
+            The actor, identified by the given actor id.
+          schema:
+            $ref: '#/definitions/ActorForMultiDisplay'
+        '404':
+          description: An actor with the specified actor id could not be found.
+        '500':
+          description: An error occured. The cause is not specified.
+    put:
+      tags:
+        - actors
+      summary: Updates an actor.
+      description: >-
+        This method updates an existing actor in the movie info data store. The id consists normaly of a formalized combination of first and last name.
+      operationId: UpdateActor
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - name: actorId
+          in: path
+          description: >-
+            The actor id consists normaly of a formalized combination of first and
+            last name.
+          required: true
+          type: string
+        - name: actor
+          in: body
+          description: The actor to be inserted in the movie info data store.
+          required: true
+          schema:
+            $ref: '#/definitions/ActorForUpdate'
+      responses:
+        '204':
+          description: The actor was updated in movie info data store.
+        '404':
+          description: An actor with the specified actor id could not be found.
+        '500':
+          description: An error occured. The cause is not specified.
+    patch:
+      tags:
+        - actors
+      summary: Updates an actor.
+      description: >-
+        This method updates an existing actor in the movie info data store. The id consists normaly of a formalized combination of first and last name.
+      operationId: PatchActor
+      produces:
+        - application/json
+      parameters:
+        - name: actorId
+          in: path
+          required: true
+          type: string
+          description: >-
+            The actor id consists normaly of a formalized combination of first and
+            last name.
+        - name: patchRequest
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/PatchRequest"
+      responses:
+        '204':
+          description: The actor was updated in movie info data store.
+        '404':
+          description: An actor with the specified actor id could not be found.
+        '500':
+          description: An error occured. The cause is not specified.
+    delete:
+      tags:
+        - actors
+      summary: Deletes an actor.
+      description: >-
+        This method deletes an existing actor from the movie info data store. The id consists normaly of a formalized combination of first and last name.
+      operationId: DeleteActor
+      produces:
+        - application/json
+        - application/xml
+      parameters:
+        - name: actorId
+          in: path
+          description: >-
+            The actor id consists normaly of a formalized combination of first and
+            last name.
+          required: true
+          type: string
+      responses:
+        '204':
+          description: The actor was deleted from the movie info data store.
+        '404':
+          description: An actor with the specified actor id could not be found.
+        '500':
+          description: An error occured. The cause is not specified.
+definitions:
+  ActorForMultiDisplay:
+    type: object
+    properties:
+      name:
+        type: string
+      age:
+        type: integer
+        format: int32
+  ActorForCreate:
+    type: object
+    properties:
+      firstName:
+        type: string
+      middleName:
+        type: string
+      lastName:
+        type: string
+      bio:
+        type: string
+      birthDate:
+        type: string
+        format: date
+  ActorForUpdate:
+    type: object
+    properties:
+      firstName:
+        type: string
+      middleName:
+        type: string
+      lastName:
+        type: string
+      bio:
+        type: string
+      birthDate:
+        type: string
+        format: date
+  PatchRequest:
+    type: array
+    items:
+      $ref: "#/definitions/PatchDocument"
+  PatchDocument: 
+    description: A JSONPatch document as defined by RFC 6902 
+    required:
+     - "op"
+     - "path"
+    properties: 
+     op: 
+      type: string 
+      description: The operation to be performed 
+      enum:
+       - "add"
+       - "remove"
+       - "replace"
+       - "move"
+       - "copy"
+       - "test"
+     path: 
+      type: string 
+      description: A JSON-Pointer 
+     value: 
+      type: object 
+      description: The value to be used within the operations.
+     from: 
+      type: string 
+      description: A string containing a JSON Pointer value.  
+host: virtserver.swaggerhub.com
+basePath: /v1
+schemes:
+  - http
