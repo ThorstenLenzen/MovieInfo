@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess.Contracts\DataAccess.Contracts.csproj" />
     <ProjectReference Include="..\PersistenceModel.SqlServer\PersistenceModel.SqlServer.csproj" />
   </ItemGroup>
 

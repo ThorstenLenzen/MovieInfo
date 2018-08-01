@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using PersistenceModel.SqlServer;
-using Toto.MovieInfo.DataAccess.Contracts.SqlServer;
+using Toto.MovieInfo.DataAccess.Contracts;
 
 namespace Toto.MovieInfo.DataAccess.SqlServer
 {

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Toto.MovieInfo.DataAccess.Contracts</AssemblyName>
+    <RootNamespace>Toto.MovieInfo.DataAccess.Contracts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersistenceModel.SqlServer\PersistenceModel.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>

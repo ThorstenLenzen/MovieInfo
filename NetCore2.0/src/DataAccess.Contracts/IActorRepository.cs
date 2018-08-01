@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using PersistenceModel.SqlServer;
 
-namespace Toto.MovieInfo.DataAccess.Contracts.SqlServer
+namespace Toto.MovieInfo.DataAccess.Contracts
 {
     public interface IActorRepository
     {

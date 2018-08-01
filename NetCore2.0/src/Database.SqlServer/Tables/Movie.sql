@@ -1,9 +1,9 @@
-﻿CREATE TABLE [dbo].[Movies]
+﻿CREATE TABLE [dbo].[Movie]
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
 	[GenreId] UNIQUEIDENTIFIER NULL,
     [Name] VARCHAR(100) NOT NULL,
 	[Description] VARCHAR(500) NULL,
 	[ReleaseDate] VARCHAR(4) NULL, 
-    CONSTRAINT [FK_Movies_Genres] FOREIGN KEY (GenreId) REFERENCES [Genres]([Id]),
+    CONSTRAINT [FK_Movie_Genre] FOREIGN KEY (GenreId) REFERENCES [Genre]([Id]),
 )

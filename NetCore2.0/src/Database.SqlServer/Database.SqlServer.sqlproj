@@ -63,9 +63,9 @@
     <Folder Include="UtilityScripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\Genres.sql" />
-    <Build Include="Tables\Movies.sql" />
-    <Build Include="Tables\MovieActors.sql" />
+    <Build Include="Tables\Genre.sql" />
+    <Build Include="Tables\Movie.sql" />
+    <Build Include="Tables\MovieActor.sql" />
     <Build Include="Tables\Actor.sql" />
     <None Include="SeedScripts\PopulateGenres.sql" />
     <None Include="SeedScripts\PopulateMovies.sql" />
