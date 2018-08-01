@@ -1,0 +1,13 @@
+﻿INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'b34e2939-7338-4788-b70e-352f71ac6ffc', 'harrisonford', N'Harrison', N'Ford', NULL)
+INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'247f17b3-00d9-46e1-90bd-792acfe42baf', 'juliaormond', N'Julia', N'Ormond', NULL)
+INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'2a845db8-85b1-499a-9460-eb2ed8ebc7a6', 'markhamil', N'Mark', N'Hamil', NULL)
+INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'3bd19b3a-c87c-4825-9aec-9aef545b9e6b', 'audreyhepburn' N'Audrey', N'Hepburn', NULL)
+INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'D90A30C8-8A74-4641-AEFA-D735BBD79DE7', 'rutgerhauer', N'Rutger', N'Hauer', NULL)
+INSERT INTO [dbo].[Actors] ([Id], [Key], [FirstName], [LastName], [Bio]) 
+	VALUES (N'5783ECEE-38AB-4724-9AD6-864E7440E803', 'seanbean', N'Sean', N'Bean', NULL)
+
