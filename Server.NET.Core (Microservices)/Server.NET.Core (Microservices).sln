@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieQueryService", "src\MovieQueryService\MovieQueryService.csproj", "{08AAE6ED-C1C3-4A9A-96E7-DC7E8E55395D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Mongo", "src\DataAccess.Mongo\DataAccess.Mongo.csproj", "{B3C722BE-5468-41DC-8A3D-98F444FB8379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor.QueryStack", "src\Actor.QueryStack\Actor.QueryStack.csproj", "{30FCA68C-00C5-4C0A-AA98-8ADBC9BBCD3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor.CommandStack", "src\Actor.CommandStack\Actor.CommandStack.csproj", "{1C255C02-A7B0-439B-A8E5-B8202066D875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor.Service", "src\Actor.Service\Actor.Service.csproj", "{42E529E7-EF1C-481C-BFED-0ACAA8652C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actor.Server", "src\Actor.Server\Actor.Server.csproj", "{D18CB244-CD0E-47D8-8EA2-A46FE15A7143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08AAE6ED-C1C3-4A9A-96E7-DC7E8E55395D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AAE6ED-C1C3-4A9A-96E7-DC7E8E55395D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AAE6ED-C1C3-4A9A-96E7-DC7E8E55395D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AAE6ED-C1C3-4A9A-96E7-DC7E8E55395D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C722BE-5468-41DC-8A3D-98F444FB8379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C722BE-5468-41DC-8A3D-98F444FB8379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C722BE-5468-41DC-8A3D-98F444FB8379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C722BE-5468-41DC-8A3D-98F444FB8379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FCA68C-00C5-4C0A-AA98-8ADBC9BBCD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FCA68C-00C5-4C0A-AA98-8ADBC9BBCD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FCA68C-00C5-4C0A-AA98-8ADBC9BBCD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FCA68C-00C5-4C0A-AA98-8ADBC9BBCD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C255C02-A7B0-439B-A8E5-B8202066D875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C255C02-A7B0-439B-A8E5-B8202066D875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C255C02-A7B0-439B-A8E5-B8202066D875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C255C02-A7B0-439B-A8E5-B8202066D875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42E529E7-EF1C-481C-BFED-0ACAA8652C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E529E7-EF1C-481C-BFED-0ACAA8652C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E529E7-EF1C-481C-BFED-0ACAA8652C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E529E7-EF1C-481C-BFED-0ACAA8652C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18CB244-CD0E-47D8-8EA2-A46FE15A7143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18CB244-CD0E-47D8-8EA2-A46FE15A7143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18CB244-CD0E-47D8-8EA2-A46FE15A7143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18CB244-CD0E-47D8-8EA2-A46FE15A7143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {313448EB-4EE5-45B5-9B08-3043D1E05841}
+	EndGlobalSection
+EndGlobal

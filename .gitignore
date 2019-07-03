@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/NetCore2.0/src/Database.SqlServer/Database.SqlServer.jfm
